@@ -7,14 +7,12 @@ import com.ahmtmtlu.inventoryservice.repository.VenueRepository;
 import com.ahmtmtlu.inventoryservice.response.EventInventoryResponse;
 import com.ahmtmtlu.inventoryservice.response.VenueInventoryResponse;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.crossstore.ChangeSetPersister;
-import org.springframework.web.client.HttpClientErrorException;
-
+import org.springframework.stereotype.Service;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
+@Service
 public class InventoryServiceImpl implements InventoryService{
 
      private final EventRepository eventRepository;
